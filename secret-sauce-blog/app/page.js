@@ -16,7 +16,7 @@ export default async function Home() {
   const allPosts = await getAllPosts();
   return (
     <main>
-      <p>
+      <p className='mb-2 bg-orange-300 p-3'>
         Welcome to the Honeypot Blog, where sweetness awaits at every turn! Dive
         into our hive of articles, written with love and buzzing with
         creativity. And the best part? You&apos;re not alone in this indulgence.
