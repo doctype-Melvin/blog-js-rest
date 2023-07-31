@@ -1,10 +1,14 @@
-export default function Home() {
-  return (
-   <main>
-    <h1>Hello World</h1>
-    <p>
-      Introducing the <q>WhisperBlend</q>, a secret sauce coveted by top chefs. Crafted from rare herbs & mystical spices, it transcends taste. One drizzle sparks culinary magic! But shhh, only whispered recipes can unveil its mystique. Unleash flavor! 🤫🔥 #WhisperBlend #SecretSauce #FoodMagic
-    </p>
-   </main>
-  )
+const getAllPosts = async () => {
+  const response = await fetch('http://localhost:3001/rest/blogposts');
+
+  if (!response.ok) {
+    throw new Error('The posts?! Where are they?!');
+  }
+
+  return response.json();
+};
+
+export default async function Home() {
+  const allPosts = await getAllPosts();
+  return <main>{allPosts ? <div>Success</div> : <div>Oopss...</div>}</main>;
 }
