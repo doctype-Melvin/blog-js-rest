@@ -34,6 +34,12 @@ export default function RootLayout({ children }) {
         </Link>
 
         {children}
+        <footer>
+          &copy; 2023{' '}
+          <a href='https://www.github.com/doctype-melvin' target='_blank'>
+            doctype-Melvin
+          </a>
+        </footer>
       </body>
     </html>
   );

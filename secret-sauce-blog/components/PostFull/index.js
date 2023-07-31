@@ -22,6 +22,7 @@ export default function PostFull({ data }) {
           height={250}
         />
         <p>{data.content}</p>
+        <Share data={data} />
       </section>
       {/* Place share button here */}
     </section>
