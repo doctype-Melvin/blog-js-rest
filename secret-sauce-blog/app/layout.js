@@ -21,7 +21,7 @@ const roboto = localFont({
 });
 
 export const metadata = {
-  title: 'Secret Sauce Blog',
+  title: '🍯 Honeypot Blog',
   description: 'Consuming API for the fun of it',
 };
 
