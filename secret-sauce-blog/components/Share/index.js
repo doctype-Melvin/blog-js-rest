@@ -21,7 +21,7 @@ export default function Share({ data }) {
   };
 
   return (
-    <section aria-label='Social Share Buttons'>
+    <section className='flex' aria-label='Social Share Buttons'>
       <EmailShareButton
         subject={data.title}
         body='I just found this super engaging article on Honeypot Blog!'

@@ -28,8 +28,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className={`${roboto.variable} font-sans`}>
-      <body>
-        <Link href={`/`} className='text-center text-3xl'>
+      <body className='w-full flex-col items-center'>
+        <Link href={`/`} className='block w-full p-2 text-center text-3xl'>
           🍯 | Honeypot Blog | 🍯
         </Link>
 
