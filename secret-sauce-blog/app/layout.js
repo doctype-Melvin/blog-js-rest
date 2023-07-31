@@ -1,5 +1,6 @@
 import './globals.css';
 import localFont from '@next/font/local';
+import Link from 'next/link';
 
 const roboto = localFont({
   src: [
@@ -28,15 +29,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' className={`${roboto.variable} font-sans`}>
       <body>
-        <h1 className='text-center text-3xl'>🍯 | Honeypot Blog | 🍯</h1>
-        <p>
-          Welcome to the Honeypot Blog, where sweetness awaits at every turn!
-          Dive into our hive of articles, written with love and buzzing with
-          creativity. And the best part? You&apos;re not alone in this
-          indulgence. Share the sweetness with your friends by forwarding your
-          favorite posts and spreading the joy of discovery. The adventure
-          awaits! 🍯📚🐝
-        </p>
+        <Link href={`/`} className='text-center text-3xl'>
+          🍯 | Honeypot Blog | 🍯
+        </Link>
+
         {children}
       </body>
     </html>
