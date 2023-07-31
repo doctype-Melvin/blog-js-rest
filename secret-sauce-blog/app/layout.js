@@ -28,13 +28,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className={`${roboto.variable} font-sans`}>
-      <body className='w-full flex-col items-center'>
+      <body className='relative flex w-full flex-col items-center'>
         <Link href={`/`} className='block w-full p-2 text-center text-3xl'>
           🍯 | Honeypot Blog | 🍯
         </Link>
 
         {children}
-        <footer>
+        <footer className='fixed bottom-0 w-full bg-orange-300 p-2 text-center'>
           &copy; 2023{' '}
           <a href='https://www.github.com/doctype-melvin' target='_blank'>
             doctype-Melvin

@@ -8,13 +8,18 @@ export default function PostPreview({ data }) {
   const published = formatDistance(new Date(data.created), Date.now());
 
   return (
-    <li aria-label='Post Preview' className='p-2'>
-      <p>
+    <li
+      aria-label='Post Preview'
+      className='mx-2 rounded bg-gradient-to-br from-amber-100 to-amber-200 p-3'
+    >
+      <p className='text-sm'>
         Published {published} ago by {data.author}
       </p>
-      <h1>{data.title}</h1>
+      <h1 className='text-lg'>{data.title}</h1>
       <p>{previewContent}</p>
-      <Link href={`/posts/${data.id}`}>read more</Link>
+      <Link href={`/posts/${data.id}`} className='font-semibold'>
+        read more
+      </Link>
     </li>
   );
 }

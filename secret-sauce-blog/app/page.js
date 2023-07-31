@@ -23,7 +23,10 @@ export default async function Home() {
         Share the sweetness with your friends by forwarding your favorite posts
         and spreading the joy of discovery. The adventure awaits! 🍯📚🐝
       </p>
-      <ul aria-label='grid of post previews'>
+      <ul
+        aria-label='grid of post previews'
+        className='grid gap-2 pb-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+      >
         {allPosts.map((post) => (
           <PostPreview key={post.id} data={post} />
         ))}
