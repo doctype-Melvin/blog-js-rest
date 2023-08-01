@@ -6,7 +6,7 @@ export default function PostFull({ data }) {
   const datePublished = format(new Date(data.created), 'MM/dd/yyyy');
 
   return (
-    <section aria-label='full post' className='w-11/12 md:w-3/4 lg:w-3/5'>
+    <section aria-label='full post' className='w-11/12 pb-5 md:w-3/4 lg:w-3/5'>
       <section aria-label='post date and author' className='flex w-full'>
         <p aria-label='date'>{datePublished}</p>
         <p aria-label='author' className='ml-3'>

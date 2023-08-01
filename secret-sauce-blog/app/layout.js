@@ -3,6 +3,7 @@ import localFont from '@next/font/local';
 import Link from 'next/link';
 import LightMode from '@/components/LightMode';
 import { ThemeProvider } from './theme-provider';
+import ScrollUpArrow from '@/components/ScrollUpButton';
 
 const roboto = localFont({
   src: [
@@ -45,8 +46,8 @@ export default function RootLayout({ children }) {
             </Link>
             <LightMode />
           </section>
-
           {children}
+          <ScrollUpArrow />
           <footer className='w-full p-2 text-center'>
             &copy; 2023{' '}
             <a href='https://www.github.com/doctype-melvin' target='_blank'>
