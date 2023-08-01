@@ -21,23 +21,26 @@ export default function Share({ data }) {
   };
 
   return (
-    <section className='flex' aria-label='Social Share Buttons'>
+    <section
+      className='flex w-1/2 justify-around py-3'
+      aria-label='Social Share Buttons'
+    >
       <EmailShareButton
         subject={data.title}
         body='I just found this super engaging article on Honeypot Blog!'
       >
-        <Mail />
+        <Mail className='h-6 w-6' />
       </EmailShareButton>
       <RedditShareButton url={shareUrl} quote={data.title}>
-        <Reddit />
+        <Reddit className='h-6 w-6' />
       </RedditShareButton>
       <TwitterShareButton url={shareUrl} quote={data.title}>
-        <Twitter />
+        <Twitter className='h-6 w-6' />
       </TwitterShareButton>
       <FacebookShareButton url={shareUrl} quote={data.title}>
-        <FB />
+        <FB className='h-6 w-6' />
       </FacebookShareButton>
-      <CopyShare onClick={() => handleCopy(shareUrl)} />
+      <CopyShare onClick={() => handleCopy(shareUrl)} className='h-6 w-6' />
     </section>
   );
 }
