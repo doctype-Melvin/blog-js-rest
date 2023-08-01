@@ -2,6 +2,7 @@ import './globals.css';
 import localFont from '@next/font/local';
 import Link from 'next/link';
 import LightMode from '@/components/LightMode';
+import { ThemeProvider } from './theme-provider';
 
 const roboto = localFont({
   src: [
@@ -30,23 +31,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' className={`${roboto.variable} h-full font-sans`}>
       <body className='flex h-full w-full flex-col items-center'>
-        <section
-          aria-label='Home button and light mode toggle'
-          className='flex w-11/12 items-center justify-between'
-        >
-          <Link href={`/`} className='block w-11/12 p-2 text-3xl'>
-            MarDeCorBlog
-          </Link>
-          <LightMode />
-        </section>
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          <section
+            aria-label='Home button and light mode toggle'
+            className='flex w-11/12 items-center justify-between'
+          >
+            <Link href={`/`} className='block w-11/12 p-2 text-3xl'>
+              MarDeCorBlog
+            </Link>
+            <LightMode />
+          </section>
 
-        {children}
-        <footer className='w-full p-2 text-center'>
-          &copy; 2023{' '}
-          <a href='https://www.github.com/doctype-melvin' target='_blank'>
-            doctype-Melvin
-          </a>
-        </footer>
+          {children}
+          <footer className='w-full p-2 text-center'>
+            &copy; 2023{' '}
+            <a href='https://www.github.com/doctype-melvin' target='_blank'>
+              doctype-Melvin
+            </a>
+          </footer>
+        </ThemeProvider>
       </body>
     </html>
   );

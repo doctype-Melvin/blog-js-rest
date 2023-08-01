@@ -5,21 +5,27 @@ import {
   MdOutlineLightMode as Light,
 } from 'react-icons/md';
 import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
 
 export default function LightMode() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleMode = () => {
-    setDarkMode(!darkMode);
-  };
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    console.log(`Currently in dark mode ${darkMode}`);
-  }, [darkMode]);
+    setMounted(true);
+  }, []);
 
-  return darkMode ? (
-    <Light size='2rem' className='cursor-pointer' onClick={toggleMode} />
-  ) : (
-    <Dark size='2rem' className='cursor-pointer' onClick={toggleMode} />
+  if (!mounted) {
+    return null;
+  }
+
+  return (
+    <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      {theme === 'light' ? (
+        <Dark size='2rem' className='cursor-pointer' />
+      ) : (
+        <Light size='2rem' className='cursor-pointer' />
+      )}
+    </button>
   );
 }
