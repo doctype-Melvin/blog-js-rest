@@ -10,16 +10,16 @@ export default function PostPreview({ data }) {
   return (
     <li
       aria-label='Post Preview'
-      className='mx-2 rounded bg-gradient-to-br from-amber-100 to-amber-200 p-3'
+      className='border-black-200 mx-2 cursor-pointer rounded border-2 border-solid p-3 odd:hover:bg-orange-300 even:hover:bg-yellow-200'
     >
-      <p className='text-sm'>
-        Published {published} ago by {data.author}
-      </p>
-      <h1 className='text-lg'>{data.title}</h1>
-      <p>{previewContent}</p>
-      <Link href={`/posts/${data.id}`} className='font-semibold'>
-        read more
+      <Link href={`/posts/${data.id}`}>
+        <p className='text-sm'>
+          Published {published} ago by {data.author}
+        </p>
+        <h1 className='text-lg'>{data.title}</h1>
+        <p>{previewContent}</p>
       </Link>
+      <div className='font-semibold'>read more</div>
     </li>
   );
 }

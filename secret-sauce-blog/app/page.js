@@ -26,7 +26,7 @@ export default async function Home() {
       </section>
       <ul
         aria-label='grid of post previews'
-        className='grid gap-2 pb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+        className='mx-1 grid gap-2 pb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
       >
         {allPosts.map((post) => (
           <PostPreview key={post.id} data={post} />
