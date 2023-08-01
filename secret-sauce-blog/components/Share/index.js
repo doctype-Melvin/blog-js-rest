@@ -22,7 +22,8 @@ export default function Share({ data }) {
 
   return (
     <section
-      className='flex w-1/2 justify-around py-3'
+      // Set with for all other screen sizes
+      className='flex justify-around py-3 sm:w-1/5 md:w-2/3'
       aria-label='Social Share Buttons'
     >
       <EmailShareButton

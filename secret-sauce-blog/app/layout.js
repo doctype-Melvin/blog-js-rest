@@ -1,6 +1,7 @@
 import './globals.css';
 import localFont from '@next/font/local';
 import Link from 'next/link';
+import LightMode from '@/components/LightMode';
 
 const roboto = localFont({
   src: [
@@ -29,9 +30,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' className={`${roboto.variable} h-full font-sans`}>
       <body className='flex h-full w-full flex-col items-center'>
-        <Link href={`/`} className='block w-11/12 p-2 text-3xl'>
-          MarDeCorBlog
-        </Link>
+        <section
+          aria-label='Home button and light mode toggle'
+          className='flex w-11/12 items-center justify-between'
+        >
+          <Link href={`/`} className='block w-11/12 p-2 text-3xl'>
+            MarDeCorBlog
+          </Link>
+          <LightMode />
+        </section>
 
         {children}
         <footer className='w-full p-2 text-center'>

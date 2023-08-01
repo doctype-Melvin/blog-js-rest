@@ -18,8 +18,8 @@ export default function LightMode() {
   }, [darkMode]);
 
   return darkMode ? (
-    <Light onClick={toggleMode} />
+    <Light size='2rem' className='cursor-pointer' onClick={toggleMode} />
   ) : (
-    <Dark onClick={toggleMode} />
+    <Dark size='2rem' className='cursor-pointer' onClick={toggleMode} />
   );
 }
