@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       className={`${roboto.variable} h-full font-sans`}
       suppressHydrationWarning
     >
-      <body className='flex h-full w-full flex-col items-center'>
+      <body className='duration-50 flex h-full w-full flex-col items-center bg-zinc-100 transition-all ease-in-out dark:bg-slate-950'>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           <section
             aria-label='Home button and light mode toggle'

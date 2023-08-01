@@ -12,7 +12,7 @@ export default function PostPreview({ data }) {
   return (
     <li
       aria-label='Post Preview'
-      className='border-black-200 mx-2 cursor-pointer rounded border-2 border-solid p-3 transition duration-500 ease-in-out odd:hover:bg-orange-300 even:hover:bg-yellow-200 dark:odd:hover:bg-orange-600 dark:even:hover:bg-yellow-500'
+      className='mx-2 cursor-pointer rounded border-2 border-solid border-gray-600 p-3 transition duration-500 ease-in-out odd:hover:bg-orange-400 even:hover:bg-yellow-300 dark:odd:hover:bg-orange-600 dark:even:hover:bg-yellow-400 dark:even:hover:text-zinc-900'
     >
       <Link href={`/posts/${data.id}`} className='relative block'>
         <p className='text-sm'>
