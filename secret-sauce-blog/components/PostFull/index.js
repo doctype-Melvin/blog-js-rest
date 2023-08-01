@@ -24,7 +24,7 @@ export default function PostFull({ data }) {
           alt={'beautiful image'}
           width={250}
           height={250}
-          className='mx-auto'
+          className='mx-auto my-5'
         />
         <p className='text-justify'>{data.content}</p>
         <Share data={data} />

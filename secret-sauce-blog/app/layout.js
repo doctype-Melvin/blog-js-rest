@@ -28,8 +28,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className={`${roboto.variable} h-full font-sans`}>
-      <body className='relative flex h-full w-full flex-col items-center'>
-        <Link href={`/`} className='block w-full p-2 text-center text-3xl'>
+      <body className='flex h-full w-full flex-col items-center'>
+        <Link href={`/`} className='block w-11/12 p-2 text-3xl'>
           MarDeCorBlog
         </Link>
 
