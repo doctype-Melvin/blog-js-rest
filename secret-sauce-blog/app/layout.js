@@ -21,20 +21,20 @@ const roboto = localFont({
 });
 
 export const metadata = {
-  title: '🍯 Honeypot Blog',
+  title: 'MarDeCor',
   description: 'Consuming API for the fun of it',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' className={`${roboto.variable} font-sans`}>
-      <body className='relative flex w-full flex-col items-center'>
+    <html lang='en' className={`${roboto.variable} h-full font-sans`}>
+      <body className='relative flex h-full w-full flex-col items-center'>
         <Link href={`/`} className='block w-full p-2 text-center text-3xl'>
-          🍯 | Honeypot Blog | 🍯
+          MarDeCorBlog
         </Link>
 
         {children}
-        <footer className='fixed bottom-0 w-full bg-orange-300 p-2 text-center'>
+        <footer className='w-full p-2 text-center'>
           &copy; 2023{' '}
           <a href='https://www.github.com/doctype-melvin' target='_blank'>
             doctype-Melvin
