@@ -16,12 +16,12 @@ export default async function Home() {
     <main className='flex flex-col'>
       <section className='flex w-full items-center justify-center'>
         <p className='mb-2 p-4 text-justify md:w-2/3'>
-          Welcome to the Honeypot Blog, where sweetness awaits at every turn!
-          Dive into our hive of articles, written with love and buzzing with
-          creativity. And the best part? You&apos;re not alone in this
-          indulgence. Share the sweetness with your friends by forwarding your
-          favorite posts and spreading the joy of discovery. The adventure
-          awaits! 🍯📚🐝
+          Welcome aboard the tranquil waters of Mar de Cor! Just like the
+          boundless ocean, our blog embraces a sea of diverse topics, each wave
+          carrying a tale waiting to be explored. But remember, you&apos;re not
+          sailing alone on this exhilarating voyage. Share the magic of Mar de
+          Cor with your dear companions, letting them too sail along with you.
+          The more souls we reach, the wider our horizon of inspiration becomes.
         </p>
       </section>
       <ul
