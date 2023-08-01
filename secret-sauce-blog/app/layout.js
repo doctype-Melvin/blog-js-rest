@@ -29,7 +29,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' className={`${roboto.variable} h-full font-sans`}>
+    <html
+      lang='en'
+      className={`${roboto.variable} h-full font-sans`}
+      suppressHydrationWarning
+    >
       <body className='flex h-full w-full flex-col items-center'>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           <section
