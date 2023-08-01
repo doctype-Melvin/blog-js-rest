@@ -29,18 +29,21 @@ export default function Share({ data }) {
         subject={data.title}
         body='I just found this super engaging article on Honeypot Blog!'
       >
-        <Mail className='h-6 w-6' />
+        <Mail className='h-6 w-6 cursor-pointer' />
       </EmailShareButton>
       <RedditShareButton url={shareUrl} quote={data.title}>
-        <Reddit className='h-6 w-6' />
+        <Reddit className='h-6 w-6 cursor-pointer' />
       </RedditShareButton>
       <TwitterShareButton url={shareUrl} quote={data.title}>
-        <Twitter className='h-6 w-6' />
+        <Twitter className='h-6 w-6 cursor-pointer' />
       </TwitterShareButton>
       <FacebookShareButton url={shareUrl} quote={data.title}>
-        <FB className='h-6 w-6' />
+        <FB className='h-6 w-6 cursor-pointer' />
       </FacebookShareButton>
-      <CopyShare onClick={() => handleCopy(shareUrl)} className='h-6 w-6' />
+      <CopyShare
+        onClick={() => handleCopy(shareUrl)}
+        className='h-6 w-6 cursor-pointer'
+      />
     </section>
   );
 }
