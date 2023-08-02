@@ -25,7 +25,7 @@ export default function Share({ data }) {
   };
 
   useEffect(() => {
-    setTimeout(() => setCopyLink(false), 1250);
+    setTimeout(() => setCopyLink(false), 2000);
   }, [copyLink]);
 
   return (
@@ -50,7 +50,7 @@ export default function Share({ data }) {
         <FB className='h-6 w-6 cursor-pointer' />
       </FacebookShareButton>
       {copyLink && (
-        <span className='absolute -top-5 right-0 rounded bg-black p-1 text-sm text-white'>
+        <span className='absolute -top-5 right-0 animate-modal rounded bg-black p-1 text-sm text-white'>
           Link Copied!
         </span>
       )}

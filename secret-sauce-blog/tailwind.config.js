@@ -11,6 +11,15 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-roboto)'],
       },
+      keyframes: {
+        modal: {
+          '0%, 100%': { opacity: '0' },
+          '25%, 75%': { opacity: '1' },
+        },
+      },
+      animation: {
+        modal: 'modal 2s linear 1',
+      },
     },
   },
   plugins: [],
