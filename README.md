@@ -3,5 +3,8 @@ use it as practice for using NextJS 13 with a REST API.
 
 # Instructions
 
-1. Clone this repo and run `npm i` in `/secret-sauce-blog` and `/server`
-2. CD into `/secret-sauce-blog` and run `npm start`
+1. Clone this repo and run `npm i` in `/`
+
+- This will install the server and build the app
+
+2. Run `npm start`
