@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"postinstall": "(cd server && npm install) & (cd secret-sauce-blog && npm install)",
-		"start": "(cd secret-sauce-blog && npm run build && npm run start) & (cd secret-sauce-blog && npm run start)"
+		"start": "cd secret-sauce-blog && npm run build && npm run start"
 	},
 	"repository": {
 		"type": "git",
