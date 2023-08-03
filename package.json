@@ -5,9 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"install:server": "cd server && npm install",
-		"install:app": "cd secret-sauce-blog && npm install",
-		"postinstall": "run-p install:*"
+		"postinstall": "(cd server && npm install) & (cd secret-sauce-blog && npm install)"
 	},
 	"repository": {
 		"type": "git",
