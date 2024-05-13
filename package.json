@@ -1,24 +1,24 @@
 {
-	"name": "code-challenge-js-rest",
-	"version": "1.0.0",
-	"description": "I've found this code challenge during my job hunt and thought it was fun to use it as practice for using NextJS 13 with a REST API.",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"postinstall": "(cd server && npm install) & (cd secret-sauce-blog && npm install)",
-		"start": "cd secret-sauce-blog && npm run start"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/doctype-Melvin/blog-js-rest.git"
-	},
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/doctype-Melvin/blog-js-rest/issues"
-	},
-	"homepage": "https://github.com/doctype-Melvin/blog-js-rest#readme",
-	"dependencies": {
-		"postinstall": "^0.8.0"
-	}
+  "name": "code-challenge-js-rest",
+  "version": "1.0.0",
+  "description": "I found this code challenge during my job hunt and thought it was fun to use it as practice for using NextJS 13 with a REST API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "(cd server && npm install) & (cd secret-sauce-blog && npm install)",
+    "start": "cd secret-sauce-blog && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doctype-Melvin/blog-js-rest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doctype-Melvin/blog-js-rest/issues"
+  },
+  "homepage": "https://github.com/doctype-Melvin/blog-js-rest#readme",
+  "dependencies": {
+    "postinstall": "^0.8.0"
+  }
 }
