@@ -5,4 +5,4 @@ use it as practice for using NextJS 13 with a REST API.
 
 1. Clone this repo and run `npm i` in `/`
 2. Go to `/secret-sauce-blog` and run `npm run build`
-3. Run `npm start`
+3. Go to `/` and run `npm start`
